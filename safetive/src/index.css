@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Font */
+@layer base {
+    @font-face {
+        font-family: "Comic Neue", cursive;
+        font-weight: 400;
+        font-style: normal;
+        src: url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+    }
+}
