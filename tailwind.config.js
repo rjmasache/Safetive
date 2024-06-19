@@ -3,14 +3,25 @@
 export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
-        colors: {
-            navbar: "#1985A1",
-            link: "#FFFFFF",
+        extend: {
+            colors: {
+                navbar: "#1985A1",
+                link: "#FFFFFF",
+                safetive: "#8A1313",
+            },
+            fontFamily: {
+                comic: "Comic Neue, sans-serif",
+            },
+            backgroundImage: {
+                wallpaper: 'url("./assets/wallpaper.jpg")',
+            },
+            spacing: {
+                custom: "500px",
+            },
+            backgroundSize: {
+                all: "100% 100%",
+            },
         },
-        fontFamily: {
-            comic: "Comic Neue, sans-serif",
-        },
-        extend: {},
     },
     plugins: [],
 };
