@@ -4,14 +4,15 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            fontFamily: {
+                comic: ["Comic Neue", "cursive"],
+            },
             colors: {
                 navbar: "#1985A1",
                 link: "#FFFFFF",
                 safetive: "#8A1313",
             },
-            fontFamily: {
-                comic: "Comic Neue, sans-serif",
-            },
+
             backgroundImage: {
                 wallpaper: 'url("./assets/wallpaper.jpg")',
             },

@@ -1,3 +1,4 @@
+import Footer from "./components/Footer.jsx";
 import GallerySection from "./components/GallerySection.jsx";
 import MainButton from "./components/MainButton.jsx";
 import Navigation from "./components/Navigation.jsx";
@@ -10,6 +11,7 @@ export default function App() {
             <Wallpaper />
             <MainButton />
             <GallerySection />
+            <Footer />
         </>
     );
 }
