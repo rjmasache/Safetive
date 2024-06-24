@@ -3,7 +3,7 @@ import mobileMenu from "../assets/mobile-menu.svg";
 
 export default function Navigation() {
     return (
-        <div className="flex h-16 w-full flex-row items-center justify-evenly bg-navbar">
+        <div className="flex w-full flex-row items-center justify-evenly bg-navbar p-3">
             <a href="#" className="font-comic text-link">
                 <img src={safetiveLogo} alt="Safetive" className="w-14" />
             </a>
