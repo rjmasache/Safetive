@@ -7,13 +7,13 @@ import Wallpaper from "./components/Wallpaper.jsx";
 
 export default function App() {
     return (
-        <>
+        <div className="flex min-h-screen w-full flex-col">
             <Navigation />
             <Wallpaper />
             <MainButton />
             <GallerySection />
             <Phrase />
             <Footer />
-        </>
+        </div>
     );
 }
