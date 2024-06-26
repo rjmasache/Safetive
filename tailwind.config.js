@@ -10,6 +10,7 @@ export default {
             colors: {
                 navbar: "#1985A1",
                 link: "#FFFFFF",
+                hover: "#191919",
                 safetive: "#8A1313",
             },
 
