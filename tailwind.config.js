@@ -15,6 +15,7 @@ export default {
 
             backgroundImage: {
                 wallpaper: 'url("./assets/wallpaper.jpg")',
+                aboutWallpaper: 'url("./assets/about-wallpaper.jpg")',
             },
             spacing: {
                 custom: "500px",

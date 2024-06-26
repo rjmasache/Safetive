@@ -12,7 +12,11 @@ export default function App() {
             <Wallpaper />
             <MainButton />
             <GallerySection />
-            <Phrase />
+            <Phrase
+                text="¡Ven y forma parte del grupo de héroes! Deja volar tu
+                imaginación y entra en un mundo lleno de diversión en nuestro
+                cuento de superhéroes"
+            />
             <Footer />
         </div>
     );
