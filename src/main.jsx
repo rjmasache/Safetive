@@ -7,6 +7,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Tales from "./routes/Tales.jsx";
 import About from "./routes/About.jsx";
+import Characters from "./routes/Characters.jsx";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "/about",
         element: <About />,
+    },
+    {
+        path: "/characters",
+        element: <Characters />,
     },
 ]);
 

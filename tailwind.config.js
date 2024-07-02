@@ -12,6 +12,7 @@ export default {
                 link: "#FFFFFF",
                 hover: "#191919",
                 safetive: "#8A1313",
+                character: "#F2F5F5",
             },
 
             backgroundImage: {
