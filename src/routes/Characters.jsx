@@ -46,7 +46,7 @@ export function CharacterSelection() {
                             </p>
                         </div>
                         <Link
-                            to={`/tales`}
+                            to={`/familiar-tale`}
                             className="flex items-center justify-center"
                         >
                             <button className="rounded-2xl bg-safetive px-14 py-3 font-comic font-black text-link">
@@ -75,7 +75,7 @@ export function CharacterSelection() {
                             </p>
                         </div>
                         <Link
-                            to={`/tales`}
+                            to={`/familiar-tale`}
                             className="flex items-center justify-center"
                         >
                             <button className="rounded-2xl bg-safetive px-14 py-3 font-comic font-black text-link">

@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Tales from "./routes/Tales.jsx";
 import About from "./routes/About.jsx";
 import Characters from "./routes/Characters.jsx";
+import FamiliarTale from "./routes/FamiliarTale.jsx";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     {
         path: "/characters",
         element: <Characters />,
+    },
+    {
+        path: "/familiar-tale",
+        element: <FamiliarTale />,
     },
 ]);
 
