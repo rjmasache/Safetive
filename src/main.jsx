@@ -10,11 +10,13 @@ import About from "./routes/About.jsx";
 import Characters from "./routes/Characters.jsx";
 import FamiliarTale from "./routes/FamiliarTale.jsx";
 import FamiliarTaleParts from "./components/FamiliarTaleParts.jsx";
+import ErrorPage from "./components/ErrorPage.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        errorElement: <ErrorPage />,
     },
     {
         path: "/tales",
@@ -32,7 +34,6 @@ const router = createBrowserRouter([
         path: "/familiar-tale",
         element: <FamiliarTale />,
     },
-
     {
         path: "/familiar-tale-part-1",
         element: <FamiliarTaleParts />,
