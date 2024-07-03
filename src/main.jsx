@@ -9,6 +9,7 @@ import Tales from "./routes/Tales.jsx";
 import About from "./routes/About.jsx";
 import Characters from "./routes/Characters.jsx";
 import FamiliarTale from "./routes/FamiliarTale.jsx";
+import FamiliarTaleParts from "./components/FamiliarTaleParts.jsx";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
     {
         path: "/familiar-tale",
         element: <FamiliarTale />,
+    },
+
+    {
+        path: "/familiar-tale-part-1",
+        element: <FamiliarTaleParts />,
     },
 ]);
 

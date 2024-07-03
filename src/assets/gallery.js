@@ -6,6 +6,7 @@ import image5 from "./other-hero-1.jpg";
 import image6 from "./other-hero-2.jpg";
 import picture1 from "./picture-1.jpg";
 import picture2 from "./picture-2.jpg";
+import familiarImage1 from "./familiar-image-1.jpg";
 
 export const herosGallery = [
     {
@@ -61,5 +62,14 @@ export const aboutGallery = [
         name: "Picture 2",
         src: picture2,
         alt: "Eight",
+    },
+];
+
+export const familiarTaleImages = [
+    {
+        id: 9,
+        name: "Image 9",
+        src: familiarImage1,
+        alt: "Nine",
     },
 ];
