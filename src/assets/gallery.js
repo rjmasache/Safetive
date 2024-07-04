@@ -7,6 +7,7 @@ import image6 from "./other-hero-2.jpg";
 import picture1 from "./picture-1.jpg";
 import picture2 from "./picture-2.jpg";
 import familiarImage1 from "./familiar-image-1.jpg";
+import familiarImage2 from "./familiar-image-2.jpeg";
 
 export const herosGallery = [
     {
@@ -68,8 +69,16 @@ export const aboutGallery = [
 export const familiarTaleImages = [
     {
         id: 9,
-        name: "Image 9",
+        title: "Aprendiendo a volar",
+        text: "Bruce quería llegar temprano a casa porque quería contarle a sus padres que hoy en su escuela había logrado volar por primera vez",
         src: familiarImage1,
         alt: "Nine",
+    },
+    {
+        id: 10,
+        title: "Aprendiendo a volar",
+        text: "Mientras buscaba a sus padres se le ocurrió la idea de llegar volando para sorprenderlos,pero no se dió cuenta de que un adorno estaba cerca de él",
+        src: familiarImage2,
+        alt: "Ten",
     },
 ];

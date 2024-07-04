@@ -5,12 +5,11 @@ import "./index.css";
 
 // React Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./components/ErrorPage.jsx";
 import Tales from "./routes/Tales.jsx";
 import About from "./routes/About.jsx";
 import Characters from "./routes/Characters.jsx";
 import FamiliarTale from "./routes/FamiliarTale.jsx";
-import FamiliarTaleParts from "./components/FamiliarTaleParts.jsx";
-import ErrorPage from "./components/ErrorPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
     {
         path: "/familiar-tale",
         element: <FamiliarTale />,
-    },
-    {
-        path: "/familiar-tale-part-1",
-        element: <FamiliarTaleParts />,
     },
 ]);
 
