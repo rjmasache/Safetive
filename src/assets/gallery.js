@@ -9,7 +9,8 @@ import picture2 from "./picture-2.jpg";
 import familiarImage1 from "./familiar-image-1.jpg";
 import familiarImage2 from "./familiar-image-2.jpeg";
 import familiarImage3 from "./familiar-image-3.jpeg";
-import familiarImage4 from "./familiar-image-4.jpeg";
+import familiarImage4 from "./familiar-image-4.jpg";
+import familiarImage5 from "./familiar-image-5.jpeg";
 
 export const herosGallery = [
     {
@@ -95,6 +96,7 @@ export const familiarTaleImages = [
         title: "APRENDIENDO A VOLAR",
         text: "Mamá y papá escucharon el fuerte sonido y se acercaron de inmediato. Al ver el adorno roto, ¿qué crees que sucedió?",
         src: familiarImage4,
+        otherSrc: familiarImage5,
         alt: "Twelve",
     },
 ];

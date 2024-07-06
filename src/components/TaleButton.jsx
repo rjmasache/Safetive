@@ -1,9 +1,6 @@
-export default function TaleButton({ text, onClick }) {
+export default function TaleButton({ text, onClick, classNameButton }) {
     return (
-        <button
-            className="rounded-2xl bg-safetive px-2 py-3 font-comic font-black text-link sm:px-14"
-            onClick={onClick}
-        >
+        <button className={classNameButton} onClick={onClick}>
             {text}
         </button>
     );
