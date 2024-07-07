@@ -7,7 +7,9 @@ import { useState } from "react";
 export default function FamiliarTale() {
     const [image, setImage] = useState(0);
 
-    function handlePreviousClick() {
+    function handlePreviousClick(e) {
+        e.stopPropagation();
+
         setImage(
             (prevImage) =>
                 (prevImage - 1 + familiarTaleImages.length) %
@@ -15,7 +17,9 @@ export default function FamiliarTale() {
         );
     }
 
-    function handleNextClick() {
+    function handleNextClick(e) {
+        e.stopPropagation();
+
         setImage((prevImage) => (prevImage + 1) % familiarTaleImages.length);
     }
 

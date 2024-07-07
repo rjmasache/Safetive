@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import TaleButton from "./TaleButton.jsx";
 import { familiarTaleImages } from "../assets/gallery.js";
 
@@ -13,10 +12,10 @@ export default function FamiliarTaleSelection({
         <div className="flex min-h-screen w-full flex-col bg-character">
             <section className="flex w-full flex-col items-center justify-center">
                 <div className="flex w-full flex-col items-center justify-center">
-                    <p className="p-2 font-comic text-base font-black sm:text-2xl">
+                    <p className="p-2 font-comic text-base font-black sm:text-xl">
                         {currentContent.title}
                     </p>
-                    <p className="w-3/4 p-2 text-center font-comic text-base sm:text-2xl">
+                    <p className="w-3/4 p-2 text-center font-comic text-base sm:text-xl">
                         {currentContent.text}
                     </p>
                 </div>
@@ -27,7 +26,7 @@ export default function FamiliarTaleSelection({
                             <TaleButton
                                 text="Anterior"
                                 onClick={onPreviousClick}
-                                classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-xs sm:text-xl"
+                                classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-sm sm:text-xl"
                             />
                         </div>
                         <img

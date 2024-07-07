@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Characters() {
     return (
-        <div className="bg-character flex min-h-screen w-full flex-col">
+        <div className="flex min-h-screen w-full flex-col bg-character">
             <Navigation />
             <CharacterSelection />
             <Footer />
@@ -19,10 +19,10 @@ export function CharacterSelection() {
         <section className="mb-10 mt-10 flex w-full items-center justify-center">
             <section className="flex w-4/5 flex-col flex-wrap items-center justify-center bg-white sm:flex-row">
                 <section className="flex w-full flex-col flex-wrap items-center justify-center p-5">
-                    <p className="text-center font-comic text-2xl font-bold leading-normal text-black">
+                    <p className="text-center font-comic text-lg font-bold leading-normal text-black sm:text-xl">
                         APRENDIENDO A VOLAR
                     </p>
-                    <p className="text-center font-comic text-xl leading-normal">
+                    <p className="text-center font-comic text-base leading-normal sm:text-lg">
                         A continuación selecciona tu personaje
                     </p>
                 </section>
@@ -36,12 +36,12 @@ export function CharacterSelection() {
                             />
                         </div>
                         <div className="w-full p-5">
-                            <p className="text-center font-comic text-xl">
+                            <p className="text-center font-comic text-base sm:text-xl">
                                 Conoce a Bruce, es muy creativo, ágil y veloz.
                                 Te sorprenderá su gran memoria y su capacidad
                                 para pensar rápidamente.
                             </p>
-                            <p className="text-center font-comic text-xl font-bold text-black">
+                            <p className="text-center font-comic text-base font-bold text-black sm:text-lg">
                                 ¡Es todo un héroe aventurero!
                             </p>
                         </div>
@@ -65,12 +65,12 @@ export function CharacterSelection() {
                             />
                         </div>
                         <div className="w-full p-5">
-                            <p className="text-center font-comic text-xl">
+                            <p className="text-center font-comic text-base sm:text-lg">
                                 Conoce a Wanda, ¡le encanta la ciencia y
                                 tecnología! Su imaginación, astucia y forma de
                                 solucionar problemas es impresionante.
                             </p>
-                            <p className="text-center font-comic text-xl font-bold text-black">
+                            <p className="text-center font-comic text-base font-bold text-black sm:text-lg">
                                 ¡Es toda una científica aventurera!
                             </p>
                         </div>
