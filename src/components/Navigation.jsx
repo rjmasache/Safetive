@@ -11,7 +11,7 @@ export default function Navigation() {
     }
 
     return (
-        <div className="flex w-full flex-row items-center justify-evenly bg-navbar p-3">
+        <div className="flex w-full items-center justify-around bg-navbar p-2">
             <Link to={`/`} className="font-comic text-link hover:text-hover">
                 <img src={safetiveLogo} alt="Safetive" className="w-14" />
             </Link>
@@ -34,7 +34,7 @@ export default function Navigation() {
                 Sobre nosotros
             </Link>
             <button onClick={handleClick}>
-                <img src={mobileMenu} alt="Menu" className="w-14 sm:hidden" />
+                <img src={mobileMenu} alt="Menu" className="w-12 sm:hidden" />
                 {isOpen ? (
                     <div className="absolute right-2 top-20 flex flex-col flex-wrap items-start justify-evenly rounded bg-navbar p-5 sm:hidden">
                         <Link
