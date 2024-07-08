@@ -1,12 +1,29 @@
 import TaleButton from "./TaleButton.jsx";
 import { familiarTaleImages } from "../assets/gallery.js";
+import { useState } from "react";
 
 export default function FamiliarTaleSelection({
-    image,
+    currentIndex,
     onPreviousClick,
-    onNextClick,
 }) {
-    const currentContent = familiarTaleImages[image];
+    const currentContent = familiarTaleImages[currentIndex];
+    const [option, setOption] = useState();
+
+    function handleFirstOption() {
+        setOption(1);
+    }
+
+    function handleSecondOption() {
+        setOption(2);
+    }
+
+    if (option === 1) {
+        return <h1>Option 1</h1>;
+    }
+
+    if (option === 2) {
+        return <h1>Option 2</h1>;
+    }
 
     return (
         <div className="flex min-h-screen w-full flex-col bg-character">
@@ -37,7 +54,7 @@ export default function FamiliarTaleSelection({
                         <div className="absolute bottom-0 m-3 flex w-3/4 justify-center">
                             <TaleButton
                                 text="Mamá y papá preguntaron: ¿Estás bien?"
-                                onClick={onNextClick}
+                                onClick={handleFirstOption}
                                 classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-xs sm:text-xl"
                             />
                         </div>
@@ -51,7 +68,7 @@ export default function FamiliarTaleSelection({
                         <div className="absolute bottom-0 m-3 flex w-3/4 justify-center">
                             <TaleButton
                                 text="Mamá y papá se acercaron a él enojados"
-                                onClick={onNextClick}
+                                onClick={handleSecondOption}
                                 classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-xs sm:text-xl"
                             />
                         </div>
