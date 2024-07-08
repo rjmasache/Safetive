@@ -9,6 +9,7 @@ export default function FamiliarTale() {
 
     function handlePreviousClick(e) {
         e.stopPropagation();
+        e.preventDefault();
 
         setImage(
             (prevImage) =>
@@ -19,6 +20,7 @@ export default function FamiliarTale() {
 
     function handleNextClick(e) {
         e.stopPropagation();
+        e.preventDefault();
 
         setImage((prevImage) => (prevImage + 1) % familiarTaleImages.length);
     }

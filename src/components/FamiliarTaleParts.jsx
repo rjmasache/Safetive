@@ -25,11 +25,11 @@ export default function FamiliarTaleParts({
                             <p className="p-2 font-comic text-base font-black sm:text-2xl">
                                 {currentContent.title}
                             </p>
-                            <p className="w-3/4 p-2 text-center font-comic text-base sm:text-xl">
+                            <p className="w-full p-2 text-center font-comic text-base sm:text-xl">
                                 {currentContent.text}
                             </p>
                         </div>
-                        <div className="relative w-full sm:w-3/4">
+                        <div className="relative flex w-full sm:w-4/5">
                             <img
                                 src={currentContent.src}
                                 alt={currentContent.alt}

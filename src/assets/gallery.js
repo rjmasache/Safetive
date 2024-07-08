@@ -80,7 +80,7 @@ export const familiarTaleImages = [
     {
         id: 10,
         title: "APRENDIENDO A VOLAR",
-        text: "Mientras buscaba a sus padres se le ocurrió la idea de llegar volando para sorprenderlos,pero no se dió cuenta de que un adorno estaba cerca de él",
+        text: "Mientras buscaba a sus padres se le ocurrió la idea de llegar volando para sorprenderlos, pero no se dió cuenta de que un adorno estaba cerca de él",
         src: familiarImage2,
         alt: "Ten",
     },
