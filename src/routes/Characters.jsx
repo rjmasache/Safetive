@@ -5,16 +5,20 @@ import wanda from "../assets/hero-2.jpg";
 import { Link } from "react-router-dom";
 
 export default function Characters() {
+    function handleClick() {
+        window.scrollTo({ top: 0, behavior: "auto" });
+    }
+
     return (
         <div className="flex min-h-screen w-full flex-col bg-character">
             <Navigation />
-            <CharacterSelection />
+            <CharacterSelection onClick={handleClick} />
             <Footer />
         </div>
     );
 }
 
-export function CharacterSelection() {
+export function CharacterSelection({ onClick }) {
     return (
         <section className="mb-10 mt-10 flex w-full items-center justify-center">
             <section className="flex w-4/5 flex-col flex-wrap items-center justify-center bg-white sm:flex-row">
@@ -49,7 +53,10 @@ export function CharacterSelection() {
                             to={`/familiar-tale`}
                             className="flex items-center justify-center"
                         >
-                            <button className="rounded-2xl bg-safetive px-14 py-3 font-comic font-black text-link">
+                            <button
+                                className="rounded-2xl bg-safetive px-14 py-3 font-comic font-black text-link"
+                                onClick={onClick}
+                            >
                                 Bruce
                             </button>
                         </Link>
@@ -78,7 +85,10 @@ export function CharacterSelection() {
                             to={`/familiar-tale`}
                             className="flex items-center justify-center"
                         >
-                            <button className="rounded-2xl bg-safetive px-14 py-3 font-comic font-black text-link">
+                            <button
+                                className="rounded-2xl bg-safetive px-14 py-3 font-comic font-black text-link"
+                                onClick={onClick}
+                            >
                                 Wanda
                             </button>
                         </Link>
