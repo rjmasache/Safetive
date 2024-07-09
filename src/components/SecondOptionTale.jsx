@@ -57,7 +57,7 @@ export default function SecondOptionTale({ onClickBack }) {
                                 <Link to={`/tales`}>
                                     <TaleButton
                                         text="Fin"
-                                        classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-sm sm:text-lg text-link sm:px-14"
+                                        classNameButton="rounded-2xl bg-safetive px-5 py-3 font-comic text-sm sm:text-lg text-link sm:px-14"
                                     />
                                 </Link>
                             ) : (
