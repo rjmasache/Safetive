@@ -3,7 +3,7 @@ import { herosGallery, otherHeroesGallery } from "../assets/gallery.js";
 
 export default function GallerySection() {
     return (
-        <section className="flex w-full flex-col items-center justify-center sm:h-96 sm:flex-row">
+        <section className="flex w-full flex-col items-center justify-center sm:flex-row">
             <Slider images={herosGallery} />
             <Slider images={otherHeroesGallery} />
         </section>
@@ -36,10 +36,10 @@ export function Slider({ images }) {
     // }, 1000);
 
     return (
-        <div className="m-2 flex h-full w-1/2 items-center justify-center">
-            <div className="flex h-full items-center justify-center">
+        <div className="m-2 flex w-full items-center justify-center sm:m-0 sm:w-1/2">
+            <div className="flex flex-col items-center justify-center">
                 <button
-                    className="inset-y-0 left-0 top-0 m-2 flex size-4 items-center justify-center rounded-full bg-slate-200 sm:m-4 sm:size-6"
+                    className="m-4 flex size-6 items-center justify-center rounded-full bg-slate-300 sm:size-8"
                     onClick={handlePreviousClick}
                 >
                     <svg
@@ -48,7 +48,7 @@ export function Slider({ images }) {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="size-2 font-bold text-white sm:size-4"
+                        className="size-3 font-bold text-white sm:size-4"
                     >
                         <path
                             strokeLinecap="round"
@@ -58,13 +58,13 @@ export function Slider({ images }) {
                     </svg>
                 </button>
             </div>
-            <div className="flex h-full basis-1/2">
-                <img src={hero.src} alt={hero.alt} className="h-full w-full" />
+            <div className="flex h-52 basis-3/5 sm:h-96">
+                <img src={hero.src} alt={hero.alt} className="w-full" />
             </div>
 
-            <div className="flex h-full items-center justify-center">
+            <div className="flex items-center justify-center">
                 <button
-                    className="inset-y-0 right-0 top-0 m-2 flex size-4 items-center justify-center rounded-full bg-slate-200 sm:m-4 sm:size-6"
+                    className="m-4 flex size-6 items-center justify-center rounded-full bg-slate-300 sm:size-8"
                     onClick={handleNextClick}
                 >
                     <svg
@@ -73,7 +73,7 @@ export function Slider({ images }) {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="size-2 font-bold text-white sm:size-4"
+                        className="size-3 font-bold text-white sm:size-4"
                     >
                         <path
                             strokeLinecap="round"
