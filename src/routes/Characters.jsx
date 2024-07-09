@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation.jsx";
 import Footer from "../components/Footer.jsx";
+import TaleButton from "../components/TaleButton.jsx";
 import bruce from "../assets/hero-1.jpg";
 import wanda from "../assets/hero-2.jpg";
 import { Link } from "react-router-dom";
@@ -94,6 +95,14 @@ export function CharacterSelection({ onClick }) {
                         </Link>
                     </div>
                 </section>
+                <div className="w-full p-5">
+                    <TaleButton
+                        text={"Regresar"}
+                        classNameButton={
+                            "rounded-2xl bg-safetive px-4 py-2 font-comic text-sm text-link sm:px-5 sm:text-lg"
+                        }
+                    />
+                </div>
             </section>
         </section>
     );
