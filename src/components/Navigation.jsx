@@ -35,22 +35,22 @@ export default function Navigation() {
             </Link>
             <button onClick={handleClick}>
                 <img src={mobileMenu} alt="Menu" className="w-12 sm:hidden" />
-                {isOpen ? (
-                    <div className="absolute right-2 top-20 flex flex-col flex-wrap items-start justify-evenly rounded bg-navbar p-5 sm:hidden">
+                {isOpen && (
+                    <div className="absolute right-2 top-20 flex h-28 flex-col flex-wrap items-start justify-evenly rounded bg-navbar p-5 sm:hidden">
                         <Link
                             to={`/tales`}
-                            className="font-comic text-link hover:text-hover"
+                            className="font-comic text-base text-link hover:text-hover"
                         >
                             Cuentos
                         </Link>
                         <Link
                             to={`/about`}
-                            className="font-comic text-link hover:text-hover"
+                            className="font-comic text-base text-link hover:text-hover"
                         >
                             Sobre nosotros
                         </Link>
                     </div>
-                ) : null}
+                )}
             </button>
         </div>
     );
