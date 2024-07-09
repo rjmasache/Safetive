@@ -11,6 +11,7 @@ export default function FamiliarTale() {
         e.preventDefault();
 
         setCurrentIndex(currentIndex - 1);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     function handleNextClick(e) {
@@ -18,6 +19,7 @@ export default function FamiliarTale() {
         e.preventDefault();
 
         setCurrentIndex(currentIndex + 1);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     return (

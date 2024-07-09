@@ -9,10 +9,12 @@ export default function FirstOptionTale({ onClickBack }) {
 
     function handlePreviousClick() {
         setCurrentOption(currentOption - 1);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     function handleNextClick() {
         setCurrentOption(currentOption + 1);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     return (

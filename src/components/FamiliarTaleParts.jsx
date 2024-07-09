@@ -2,7 +2,6 @@ import TaleButton from "./TaleButton.jsx";
 import FamiliarTaleOptions from "./FamiliarTaleOptions.jsx";
 import { familiarTaleImages } from "../assets/gallery.js";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function FamiliarTaleParts({
     currentIndex,

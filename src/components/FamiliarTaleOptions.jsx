@@ -10,14 +10,17 @@ export default function FamiliarTaleOptions({ currentIndex, onPreviousClick }) {
 
     function handleFirstOption() {
         setOption(1);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     function handleSecondOption() {
         setOption(2);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     function handleOptionBack() {
         setOption(0);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     if (option === 1) {
