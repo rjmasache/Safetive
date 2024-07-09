@@ -22,7 +22,10 @@ export function TalesSelectionItem({ category, type }) {
         <div className="flex h-full w-full flex-col flex-wrap items-center justify-evenly">
             <img src={category} alt="Contexto familiar" className="w-3/5 p-5" />
             <Link to={`/characters`}>
-                <button className="rounded-2xl bg-safetive p-3 font-comic font-black text-link">
+                <button
+                    className="rounded-2xl bg-safetive p-3 font-comic font-black text-link"
+                    disabled={type === "escolar"}
+                >
                     Aventura {type}
                 </button>
             </Link>

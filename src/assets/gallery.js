@@ -168,7 +168,7 @@ export const secondOptionTale = [
         id: 4,
         title: "APRENDIENDO A VOLAR",
         text: `Al día siguiente el profesor de Bruce notó que él estaba triste, así que le preguntó: ¿Qué te pasa, Bruce?
-        Bruce, muy triste, le respondió: Me siento mal porque mamá y papá me castigaron muy feo y no es la primera vez
+        Bruce, muy triste, le respondió: Me siento mal porque mamá y papá me castigaron muy feo y no es la primera vez.
         El profesor le dijo: Lo siento mucho, Bruce. Nadie debe hacerte daño, por eso es muy importante que le cuentes a alguien como yo para poder ayudarte a encontrar una solución`,
         src: secondOptionImage3,
         alt: "Twenty",

@@ -25,7 +25,7 @@ export default function SecondOptionTale({ onClickBack }) {
                         <p className="p-2 font-comic text-base font-black sm:text-2xl">
                             {currentContent.title}
                         </p>
-                        <p className="w-full p-2 text-center font-comic text-base sm:text-xl">
+                        <p className="w-4/5 p-2 text-center font-comic text-base sm:text-xl">
                             {currentContent.text}
                         </p>
                     </div>
