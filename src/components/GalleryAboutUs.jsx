@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { aboutGallery } from "../assets/gallery.js";
 
 export default function GalleryAboutUs() {
@@ -12,7 +12,7 @@ export default function GalleryAboutUs() {
         }
     }
 
-    function handlePreviousClick() {
+    function handlePreviousClick(e) {
         setCurrentImage(currentImage - 1);
 
         if (currentImage <= 0) {
@@ -20,14 +20,24 @@ export default function GalleryAboutUs() {
         }
     }
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage(
+                (prevImage) => (prevImage + 1) % aboutGallery.length,
+            );
+        }, 1500);
+
+        return () => clearInterval(intervalId);
+    }, [aboutGallery.length]);
+
     let picture = aboutGallery[currentImage];
 
     return (
-        <section className="mt-20 flex w-full items-center justify-center">
-            <div className="flex h-full w-10/12 items-center justify-center">
-                <div className="flex h-full items-center justify-center">
+        <section className="mt-10 flex w-full items-center justify-center">
+            <div className="flex w-full items-center justify-center sm:w-3/5">
+                <div className="flex flex-col items-center justify-center">
                     <button
-                        className="inset-y-0 left-0 top-0 m-2 flex size-4 items-center justify-center rounded-full bg-slate-200 sm:m-4 sm:size-6"
+                        className="m-4 flex size-6 items-center justify-center rounded-full bg-slate-300 sm:size-8"
                         onClick={handlePreviousClick}
                     >
                         <svg
@@ -36,7 +46,7 @@ export default function GalleryAboutUs() {
                             viewBox="0 0 24 24"
                             strokeWidth={1.5}
                             stroke="currentColor"
-                            className="size-2 font-bold text-white sm:size-4"
+                            className="size-3 font-bold text-white sm:size-4"
                         >
                             <path
                                 strokeLinecap="round"
@@ -46,16 +56,16 @@ export default function GalleryAboutUs() {
                         </svg>
                     </button>
                 </div>
-                <div className="flex h-full basis-2/3 items-center justify-center">
+                <div className="flex basis-4/5 items-center justify-center">
                     <img
                         src={picture.src}
                         alt={picture.name}
-                        className="h-full w-full"
+                        className="w-full"
                     />
                 </div>
-                <div className="flex h-full items-center justify-center">
+                <div className="flex flex-col items-center justify-center">
                     <button
-                        className="inset-y-0 right-0 top-0 m-2 flex size-4 items-center justify-center rounded-full bg-slate-200 sm:m-4 sm:size-6"
+                        className="m-4 flex size-6 items-center justify-center rounded-full bg-slate-300 sm:size-8"
                         onClick={handleNextClick}
                     >
                         <svg
@@ -64,7 +74,7 @@ export default function GalleryAboutUs() {
                             viewBox="0 0 24 24"
                             strokeWidth={1.5}
                             stroke="currentColor"
-                            className="size-2 font-bold text-white sm:size-4"
+                            className="size-3 font-bold text-white sm:size-4"
                         >
                             <path
                                 strokeLinecap="round"

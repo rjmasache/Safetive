@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { herosGallery, otherHeroesGallery } from "../assets/gallery.js";
 
 export default function GallerySection() {
@@ -29,11 +29,15 @@ export function Slider({ images }) {
         }
     }
 
-    let hero = images[currentImage];
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+        }, 1500);
 
-    // setInterval(() => {
-    //     handleNextClick();
-    // }, 1000);
+        return () => clearInterval(intervalId);
+    }, [images.length]);
+
+    let hero = images[currentImage];
 
     return (
         <div className="m-2 flex w-full items-center justify-center sm:m-0 sm:w-1/2">
