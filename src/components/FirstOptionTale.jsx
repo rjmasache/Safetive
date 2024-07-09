@@ -1,23 +1,18 @@
-import TaleButton from "./TaleButton.jsx";
-import FamiliarTaleOptions from "./FamiliarTaleOptions.jsx";
-import { familiarTaleImages } from "../assets/gallery.js";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { firstOptionTale } from "../assets/gallery.js";
+import { Link } from "react-router-dom";
+import TaleButton from "./TaleButton";
 
-export default function FamiliarTaleParts({
-    currentIndex,
-    onPreviousClick,
-    onNextClick,
-}) {
-    const currentContent = familiarTaleImages[currentIndex];
+export default function FirstOptionTale({ onClickBack }) {
+    const [currentOption, setCurrentOption] = useState(0);
+    const currentContent = firstOptionTale[currentOption];
 
-    if (currentIndex === 3) {
-        return (
-            <FamiliarTaleOptions
-                currentIndex={currentIndex}
-                onPreviousClick={onPreviousClick}
-            />
-        );
+    function handlePreviousClick() {
+        setCurrentOption(currentOption - 1);
+    }
+
+    function handleNextClick() {
+        setCurrentOption(currentOption + 1);
     }
 
     return (
@@ -39,27 +34,37 @@ export default function FamiliarTaleParts({
                             className="w-full"
                         />
                         <div className="absolute bottom-0 left-0 m-3 sm:top-0 sm:m-10">
-                            {currentIndex === 0 ? (
-                                <Link to={`/characters`}>
+                            {currentOption === 0 ? (
+                                <Link>
                                     <TaleButton
                                         text="Anterior"
+                                        onClick={onClickBack}
                                         classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-sm sm:text-lg text-link sm:px-14"
                                     />
                                 </Link>
                             ) : (
                                 <TaleButton
                                     text="Anterior"
-                                    onClick={onPreviousClick}
+                                    onClick={handlePreviousClick}
                                     classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-link sm:px-14 text-sm sm:text-lg"
                                 />
                             )}
                         </div>
                         <div className="absolute bottom-0 right-0 m-3 sm:top-0 sm:m-10">
-                            <TaleButton
-                                text="Siguiente"
-                                onClick={onNextClick}
-                                classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-link sm:px-14 text-sm sm:text-lg"
-                            />
+                            {currentOption >= firstOptionTale.length - 1 ? (
+                                <Link to={`/tales`}>
+                                    <TaleButton
+                                        text="Fin"
+                                        classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-sm sm:text-lg text-link sm:px-14"
+                                    />
+                                </Link>
+                            ) : (
+                                <TaleButton
+                                    text="Siguiente"
+                                    onClick={handleNextClick}
+                                    classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-link sm:px-14 text-sm sm:text-lg"
+                                />
+                            )}
                         </div>
                     </div>
                 </section>
