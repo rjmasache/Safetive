@@ -5,7 +5,7 @@ import bruce from "../assets/hero-1.jpg";
 import wanda from "../assets/hero-2.jpg";
 import { Link } from "react-router-dom";
 
-export default function Characters() {
+export default function ScholarCharacters() {
     function handleClick() {
         window.scrollTo({ top: 0, behavior: "auto" });
     }
@@ -96,12 +96,14 @@ export function CharacterSelection({ onClick }) {
                     </div>
                 </section>
                 <div className="w-full p-5">
-                    <TaleButton
-                        text={"Regresar"}
-                        classNameButton={
-                            "rounded-2xl bg-safetive px-4 py-2 font-comic text-sm text-link sm:px-5 sm:text-lg"
-                        }
-                    />
+                    <Link to={`/tales`}>
+                        <TaleButton
+                            text={"Regresar"}
+                            classNameButton={
+                                "rounded-2xl bg-safetive px-4 py-2 font-comic text-sm text-link sm:px-5 sm:text-lg"
+                            }
+                        />
+                    </Link>
                 </div>
             </section>
         </section>

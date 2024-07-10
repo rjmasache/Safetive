@@ -21,11 +21,20 @@ export function TalesSelectionItem({ category, type }) {
     return (
         <div className="flex h-full w-full flex-col flex-wrap items-center justify-evenly">
             <img src={category} alt="Contexto familiar" className="w-3/5 p-5" />
-            <Link to={`/characters`}>
-                <button className="rounded-2xl bg-safetive p-3 font-comic font-black text-link">
-                    Aventura {type}
-                </button>
-            </Link>
+            {type === "familiar" && (
+                <Link to={`/familiar-characters`}>
+                    <button className="rounded-2xl bg-safetive p-3 font-comic font-black text-link">
+                        Aventura {type}
+                    </button>
+                </Link>
+            )}
+            {type === "escolar" && (
+                <Link to={`/scholar-characters`}>
+                    <button className="rounded-2xl bg-safetive p-3 font-comic font-black text-link">
+                        Aventura {type}
+                    </button>
+                </Link>
+            )}
         </div>
     );
 }
