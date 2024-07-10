@@ -10,6 +10,7 @@ import Tales from "./routes/Tales.jsx";
 import About from "./routes/About.jsx";
 import Characters from "./routes/Characters.jsx";
 import FamiliarTale from "./routes/FamiliarTale.jsx";
+import ScholarTale from "./routes/ScholarTale.jsx";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     {
         path: "/familiar-tale",
         element: <FamiliarTale />,
+    },
+    {
+        path: "/scholar-tale",
+        element: <ScholarTale />,
     },
 ]);
 
