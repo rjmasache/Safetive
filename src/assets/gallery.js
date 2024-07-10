@@ -80,28 +80,28 @@ export const familiarTaleImages = [
     {
         id: 9,
         title: "APRENDIENDO A VOLAR",
-        text: "Bruce quería llegar temprano a casa porque quería contarle a sus padres que hoy en su escuela había logrado volar por primera vez",
+        text: "Bruce quería llegar temprano a casa porque quería contarle a sus padres que hoy en su escuela había logrado volar por primera vez.",
         src: familiarImage1,
         alt: "Nine",
     },
     {
         id: 10,
         title: "APRENDIENDO A VOLAR",
-        text: "Mientras buscaba a sus padres se le ocurrió la idea de llegar volando para sorprenderlos, pero no se dió cuenta de que un adorno estaba cerca de él",
+        text: "Mientras buscaba a sus padres se le ocurrió la idea de llegar volando para sorprenderlos, pero no se dió cuenta de que un adorno estaba cerca de él.",
         src: familiarImage2,
         alt: "Ten",
     },
     {
         id: 11,
         title: "APRENDIENDO A VOLAR",
-        text: "Cuando de repente ¡Crag! Bruce se asustó porque sabía que rompió el adorno favorito de su mamá",
+        text: "Cuando de repente ¡Crag! Bruce se asustó porque sabía que rompió el adorno favorito de su mamá.",
         src: familiarImage3,
         alt: "Eleven",
     },
     {
         id: 12,
         title: "APRENDIENDO A VOLAR",
-        text: "Mamá y papá escucharon el fuerte sonido y se acercaron de inmediato. Al ver el adorno roto, ¿qué crees que sucedió?",
+        text: "Mamá y papá escucharon el fuerte sonido y se acercaron de inmediato. Al ver el adorno roto, ¿qué crees que sucedió?.",
         src: familiarImage4,
         otherSrc: familiarImage5,
         alt: "Twelve",
@@ -112,30 +112,30 @@ export const firstOptionTale = [
     {
         id: 1,
         title: "APRENDIENDO A VOLAR",
-        text: "Bruce respondió: Sí, pero quería contarles algo y accidentalmente rompí el adorno favorito de mamá",
+        text: "Bruce respondió: Sí, pero quería contarles algo y accidentalmente rompí el adorno favorito de mamá.",
         src: familiarImage4,
         alt: "Thirteen",
     },
     {
         id: 2,
         title: "APRENDIENDO A VOLAR",
-        text: "Sus padres le dijeron: No te preocupes hijo, lo importante es que no te hayas lastimado. El adorno se puede arreglar después",
+        text: "Sus padres le dijeron: No te preocupes hijo, lo importante es que no te hayas lastimado. El adorno se puede arreglar después.",
         src: firstOptionImage1,
         alt: "Fourteen",
     },
     {
         id: 3,
         title: "APRENDIENDO A VOLAR",
-        text: "Bruce se sintió tranquilo y se disculpó con sus padres. Después, junto con ellos recogieron con mucho cuidado los trozos del adorno",
+        text: "Bruce se sintió tranquilo y se disculpó con sus padres. Después, junto con ellos recogieron con mucho cuidado los trozos del adorno.",
         src: firstOptionImage2,
         alt: "Fifteen",
     },
     {
         id: 4,
         title: "APRENDIENDO A VOLAR",
-        text: `Al terminar, su papá le preguntó: ¿Qué nos querías contar hijo?
+        text: `Al terminar, su papá le preguntó: ¿Qué nos querías contar hijo?.
         Bruce le dijo: Vamos al patio para mostrarles lo que puedo hacer.
-        Ellos lo siguieron y él de inmediato empezó a volar. Sus padres estuvieron muy felices porque su hijo les enseñó lo que aprendió y por el gran esfuerzo que hizo para lograrlo`,
+        Ellos lo siguieron y él de inmediato empezó a volar. Sus padres estuvieron muy felices porque su hijo les enseñó lo que aprendió y por el gran esfuerzo que hizo para lograrlo.`,
         src: firstOptionImage3,
         alt: "Sixteen",
     },
@@ -145,22 +145,22 @@ export const secondOptionTale = [
     {
         id: 1,
         title: "APRENDIENDO A VOLAR",
-        text: `Papá gritando dijo: ¿Qué fue lo que hiciste?
-        Bruce asustado respondió: Accidentalmente rompí un adorno`,
+        text: `Papá gritando dijo: ¿Qué fue lo que hiciste?.
+        Bruce asustado respondió: Accidentalmente rompí un adorno.`,
         src: familiarImage5,
         alt: "Seventeen",
     },
     {
         id: 2,
         title: "APRENDIENDO A VOLAR",
-        text: `Su madre enojada respondió: ¡Es mi adorno favorito! ¡¿Por qué no tienes cuidado al hacer las cosas?!`,
+        text: `Su madre enojada respondió: ¡Es mi adorno favorito! ¡¿Por qué no tienes cuidado al hacer las cosas?!.`,
         src: secondOptionImage1,
         alt: "Eighteen",
     },
     {
         id: 3,
         title: "APRENDIENDO A VOLAR",
-        text: "Entonces sus padres lo castigaron, hicieron que Bruce sienta dolor y miedo por sus gritos",
+        text: "Entonces sus padres lo castigaron, hicieron que Bruce sienta dolor y miedo por sus gritos.",
         src: secondOptionImage2,
         alt: "Nineteen",
     },
@@ -169,15 +169,46 @@ export const secondOptionTale = [
         title: "APRENDIENDO A VOLAR",
         text: `Al día siguiente el profesor de Bruce notó que él estaba triste, así que le preguntó: ¿Qué te pasa, Bruce?
         Bruce, muy triste, le respondió: Me siento mal porque mamá y papá me castigaron muy feo y no es la primera vez.
-        El profesor le dijo: Lo siento mucho, Bruce. Nadie debe hacerte daño, por eso es muy importante que le cuentes a alguien como yo para poder ayudarte a encontrar una solución`,
+        El profesor le dijo: Lo siento mucho, Bruce. Nadie debe hacerte daño, por eso es muy importante que le cuentes a alguien como yo para poder ayudarte a encontrar una solución.`,
         src: secondOptionImage3,
         alt: "Twenty",
     },
     {
         id: 5,
         title: "APRENDIENDO A VOLAR",
-        text: "Luego el profesor habló con los padres de Bruce y poco a poco la casa de Bruce se convirtió en un lugar más tranquilo y feliz, donde todos podían cometer errores y aprender de ellos sin miedo",
+        text: "Luego el profesor habló con los padres de Bruce y poco a poco la casa de Bruce se convirtió en un lugar más tranquilo y feliz, donde todos podían cometer errores y aprender de ellos sin miedo.",
         src: secondOptionImage4,
         alt: "Twenty-one",
+    },
+];
+
+export const scholarTaleImages = [
+    {
+        id: 1,
+        title: "Contexto escolar",
+        text: "Bruce es un superhéroe muy amable y le encanta hacer amigos. Hoy es un día muy especial para él porque empezará su primer día en la “Super school”, una academia de niños y niñas que desean convertirse en superhéroes.",
+        src: "Image",
+        alt: "Scholar image 1",
+    },
+    {
+        id: 2,
+        title: "Contexto escolar",
+        text: "Bruce se siente muy nervioso, pero también emocionado porque su hermana le había contado que en la escuela le enseñarían a volar, algo que desde pequeño había soñado.",
+        src: "Image",
+        alt: "Scholar image 2",
+    },
+    {
+        id: 3,
+        title: "Contexto escolar",
+        text: "Bruce al llegar al aula se dió cuenta de que todos sus compañeros podían volar menos él, esto hizo que se sintiera nervioso durante toda la clase.",
+        src: "Image",
+        alt: "Scholar image 3",
+    },
+    {
+        id: 4,
+        title: "Contexto escolar",
+        text: `En el recreo, Bruce se acercó a su nuevo compañero llamado Carlos y le preguntó: ¿Puedo jugar con ustedes?. ¿qué crees que Carlos le dijo?`,
+        src: "Image",
+        alt: "Scholar image 4",
     },
 ];
