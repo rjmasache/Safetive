@@ -1,8 +1,8 @@
 import TaleButton from "./TaleButton";
 import { familiarTaleImages } from "../assets/gallery.js";
 import { useState } from "react";
-import FirstOptionTale from "./FirstOptionTale";
-import SecondOptionTale from "./SecondOptionTale";
+import FirstOptionFamiliarTale from "./FirstOptionFamiliarTale.jsx";
+import SecondOptionFamiliarTale from "./SecondOptionFamiliarTale.jsx";
 
 export default function FamiliarTaleOptions({ currentIndex, onPreviousClick }) {
     const currentContent = familiarTaleImages[currentIndex];
@@ -24,11 +24,11 @@ export default function FamiliarTaleOptions({ currentIndex, onPreviousClick }) {
     }
 
     if (option === 1) {
-        return <FirstOptionTale onClickBack={handleOptionBack} />;
+        return <FirstOptionFamiliarTale onClickBack={handleOptionBack} />;
     }
 
     if (option === 2) {
-        return <SecondOptionTale onClickBack={handleOptionBack} />;
+        return <SecondOptionFamiliarTale onClickBack={handleOptionBack} />;
     }
 
     if (option === 0) {

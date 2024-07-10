@@ -39,7 +39,7 @@ export default function FamiliarTaleParts({
                         />
                         <div className="absolute bottom-0 left-0 m-3 sm:top-0 sm:m-10">
                             {currentIndex === 0 ? (
-                                <Link to={`/characters`}>
+                                <Link to={`/familiar-characters`}>
                                     <TaleButton
                                         text="Anterior"
                                         classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-sm sm:text-lg text-link sm:px-14"

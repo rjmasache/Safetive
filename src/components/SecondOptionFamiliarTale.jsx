@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { secondOptionTale } from "../assets/gallery.js";
 import { Link } from "react-router-dom";
-import TaleButton from "./TaleButton";
+import TaleButton from "./TaleButton.jsx";
 
-export default function SecondOptionTale({ onClickBack }) {
+export default function SecondOptionFamiliarTale({ onClickBack }) {
     const [currentOption, setCurrentOption] = useState(0);
     const currentContent = secondOptionTale[currentOption];
 
