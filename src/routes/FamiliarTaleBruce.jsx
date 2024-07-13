@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation.jsx";
 import Footer from "../components/Footer.jsx";
 import FamiliarTaleParts from "../components/FamiliarTaleParts.jsx";
 import { useState } from "react";
+import { startBruceTale } from "../assets/bruceTale.js";
 
 export default function FamiliarTaleBruce() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,6 +30,7 @@ export default function FamiliarTaleBruce() {
                 currentIndex={currentIndex}
                 onPreviousClick={handlePreviousClick}
                 onNextClick={handleNextClick}
+                tale={startBruceTale}
             />
             <Footer />
         </div>

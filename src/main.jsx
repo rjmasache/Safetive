@@ -11,8 +11,8 @@ import Tales from "./routes/Tales.jsx";
 import FamiliarCharacters from "./routes/FamiliarCharacters.jsx";
 import FamiliarTaleBruce from "./routes/FamiliarTaleBruce.jsx";
 import FamiliarTaleWanda from "./routes/FamiliarTaleWanda.jsx";
-import ScholarTale from "./routes/ScholarTale.jsx";
-import ScholarCharacters from "./routes/ScholarCharacters.jsx";
+// import ScholarTale from "./routes/ScholarTale.jsx";
+// import ScholarCharacters from "./routes/ScholarCharacters.jsx";
 import FamiliarTaleOptions from "./components/FamiliarTaleOptions.jsx";
 
 const router = createBrowserRouter([

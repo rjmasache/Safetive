@@ -1,9 +1,8 @@
-import TaleButton from "./TaleButton";
-// import { familiarTaleImages } from "../assets/gallery.js";
-import { startBruceTale } from "../assets/tales.js";
+import { startBruceTale } from "../assets/bruceTale.js";
 import { useState } from "react";
-import FirstOptionFamiliarTale from "./FirstOptionFamiliarTale.jsx";
-import SecondOptionFamiliarTale from "./SecondOptionFamiliarTale.jsx";
+import TaleButton from "./TaleButton";
+// import FirstOptionFamiliarTale from "./FirstOptionFamiliarTale.jsx";
+// import SecondOptionFamiliarTale from "./SecondOptionFamiliarTale.jsx";
 
 export default function FamiliarTaleOptions({ currentIndex, onPreviousClick }) {
     const currentContent = startBruceTale[currentIndex];
@@ -24,13 +23,13 @@ export default function FamiliarTaleOptions({ currentIndex, onPreviousClick }) {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    if (option === 1) {
-        return <FirstOptionFamiliarTale onClickBack={handleOptionBack} />;
-    }
+    // if (option === 1) {
+    //     return <FirstOptionFamiliarTale onClickBack={handleOptionBack} />;
+    // }
 
-    if (option === 2) {
-        return <SecondOptionFamiliarTale onClickBack={handleOptionBack} />;
-    }
+    // if (option === 2) {
+    //     return <SecondOptionFamiliarTale onClickBack={handleOptionBack} />;
+    // }
 
     if (option === 0) {
         return (
