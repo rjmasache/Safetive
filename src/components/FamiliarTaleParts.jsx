@@ -1,6 +1,6 @@
 import TaleButton from "./TaleButton.jsx";
 import FamiliarTaleOptions from "./FamiliarTaleOptions.jsx";
-import { familiarTaleImages } from "../assets/gallery.js";
+import { startBruceTale } from "../assets/tales.js";
 import { Link } from "react-router-dom";
 
 export default function FamiliarTaleParts({
@@ -8,7 +8,7 @@ export default function FamiliarTaleParts({
     onPreviousClick,
     onNextClick,
 }) {
-    const currentContent = familiarTaleImages[currentIndex];
+    const currentContent = startBruceTale[currentIndex];
 
     if (currentIndex === 3) {
         return (

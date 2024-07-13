@@ -51,7 +51,7 @@ export function CharacterSelection({ onClick }) {
                             </p>
                         </div>
                         <Link
-                            to={`/scholar-tale`}
+                            to={`/familiar-tale-bruce`}
                             className="flex items-center justify-center"
                         >
                             <button
@@ -83,7 +83,7 @@ export function CharacterSelection({ onClick }) {
                             </p>
                         </div>
                         <Link
-                            to={`/scholar-tale`}
+                            to={`/familiar-tale-wanda`}
                             className="flex items-center justify-center"
                         >
                             <button

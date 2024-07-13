@@ -1,9 +1,9 @@
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Navigation from "../components/Navigation.jsx";
+import Footer from "../components/Footer.jsx";
 import FamiliarTaleParts from "../components/FamiliarTaleParts.jsx";
 import { useState } from "react";
 
-export default function FamiliarTale() {
+export default function FamiliarTaleBruce() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     function handlePreviousClick(e) {
