@@ -31,6 +31,8 @@ export default function FamiliarTaleBruce() {
                 onPreviousClick={handlePreviousClick}
                 onNextClick={handleNextClick}
                 tale={startBruceTale}
+                firstLink={`/familiar-tale-bruce-calm-parents`}
+                secondLink={`/familiar-tale-bruce-angry-parents`}
             />
             <Footer />
         </div>

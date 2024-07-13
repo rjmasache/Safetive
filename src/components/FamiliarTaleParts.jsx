@@ -6,6 +6,8 @@ export default function FamiliarTaleBruceParts({
     currentIndex,
     onPreviousClick,
     onNextClick,
+    firstLink,
+    secondLink,
 }) {
     const currentContent = tale[currentIndex];
 
@@ -36,11 +38,12 @@ export default function FamiliarTaleBruceParts({
                                 className="w-4/5"
                             />
                             <div className="absolute bottom-0 m-3 flex w-3/4 justify-center">
-                                <TaleButton
-                                    text="Mamá y papá preguntaron: ¿Estás bien?"
-                                    // onClick={handleFirstOption}
-                                    classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-xs sm:text-xl"
-                                />
+                                <Link to={firstLink}>
+                                    <TaleButton
+                                        text={currentContent.answer1}
+                                        classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-sm sm:text-xl"
+                                    />
+                                </Link>
                             </div>
                         </div>
                         <div className="relative flex w-full justify-center sm:w-1/2">
@@ -50,11 +53,12 @@ export default function FamiliarTaleBruceParts({
                                 className="w-4/5"
                             />
                             <div className="absolute bottom-0 m-3 flex w-3/4 justify-center">
-                                <TaleButton
-                                    text="Mamá y papá se acercaron a él enojados"
-                                    // onClick={handleSecondOption}
-                                    classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-xs sm:text-xl"
-                                />
+                                <Link to={secondLink}>
+                                    <TaleButton
+                                        text={currentContent.answer2}
+                                        classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-sm sm:text-xl"
+                                    />
+                                </Link>
                             </div>
                         </div>
                     </div>

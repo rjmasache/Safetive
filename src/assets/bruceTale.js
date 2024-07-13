@@ -41,6 +41,8 @@ export const startBruceTale = [
         image: familiarTaleBruceImage4,
         otherImage: familiarTaleBruceImage5,
         alt: "FamiliarTaleBruce4",
+        answer1: "Mamá y papá preguntaron: ¿Estás bien?",
+        answer2: "Mamá y papá se acercaron a él enojados",
     },
 ];
 
