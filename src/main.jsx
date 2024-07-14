@@ -9,11 +9,18 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import About from "./routes/About.jsx";
 import Tales from "./routes/Tales.jsx";
 import FamiliarCharacters from "./routes/FamiliarCharacters.jsx";
-import FamiliarTaleBruce from "./routes/FamiliarTaleBruce.jsx";
-import FamiliarTaleWanda from "./routes/FamiliarTaleWanda.jsx";
+import FamiliarTaleParts from "./components/FamiliarTaleParts.jsx";
+import {
+    startBruceTale,
+    calmParentsTale,
+    calmBruceTale,
+    sadBruceTale,
+    angryParentsTale,
+    talkTeacherBruceTale,
+    quietBruceTale,
+} from "./assets/bruceFamiliarTale.js";
 // import ScholarTale from "./routes/ScholarTale.jsx";
 // import ScholarCharacters from "./routes/ScholarCharacters.jsx";
-import FamiliarTaleOptions from "./components/FamiliarTaleOptions.jsx";
 
 const router = createBrowserRouter([
     {
@@ -35,43 +42,100 @@ const router = createBrowserRouter([
     },
     {
         path: "/familiar-tale-bruce",
-        element: <FamiliarTaleBruce />,
+        element: (
+            <FamiliarTaleParts
+                path="/familiar-tale-bruce"
+                tale={startBruceTale}
+                firstLink={`/familiar-tale-bruce-calm-parents`}
+                secondLink={`/familiar-tale-bruce-angry-parents`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-bruce-calm-parents",
-        element: <FamiliarTaleOptions />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-bruce-calm-parents`}
+                tale={calmParentsTale}
+                firstLink={`/familiar-tale-bruce-calm`}
+                secondLink={`/familiar-tale-bruce-sad`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-bruce-angry-parents",
-        element: <FamiliarTaleOptions />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-bruce-angry-parents`}
+                tale={angryParentsTale}
+                firstLink={`/familiar-tale-bruce-quiet`}
+                secondLink={`/familiar-tale-bruce-talk-teacher`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-bruce-calm",
-        element: <FamiliarTaleOptions />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-bruce-calm`}
+                tale={calmBruceTale}
+                firstLink={`/familiar-tale-bruce-calm`}
+                secondLink={`/familiar-tale-bruce-sad`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-bruce-sad",
-        element: <FamiliarTaleOptions />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-bruce-sad`}
+                tale={sadBruceTale}
+                firstLink={`/familiar-tale-bruce-calm`}
+                secondLink={`/familiar-tale-bruce-sad`}
+            />
+        ),
+    },
+    {
+        path: "/familiar-tale-bruce-quiet",
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-bruce-calm`}
+                tale={quietBruceTale}
+                firstLink={`/familiar-tale-bruce-calm`}
+                secondLink={`/familiar-tale-bruce-sad`}
+            />
+        ),
+    },
+    {
+        path: "/familiar-tale-bruce-talk-teacher",
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-bruce-calm`}
+                tale={talkTeacherBruceTale}
+                firstLink={`/familiar-tale-bruce-calm`}
+                secondLink={`/familiar-tale-bruce-sad`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-wanda",
-        element: <FamiliarTaleWanda />,
+        element: <FamiliarTaleParts />,
     },
     {
         path: "/familiar-tale-wanda-calm-parents",
-        element: <FamiliarTaleOptions />,
+        element: <FamiliarTaleParts />,
     },
     {
         path: "/familiar-tale-wanda-angry-parents",
-        element: <FamiliarTaleOptions />,
+        element: <FamiliarTaleParts />,
     },
     {
         path: "/familiar-tale-wanda-calm",
-        element: <FamiliarTaleOptions />,
+        element: <FamiliarTaleParts />,
     },
     {
         path: "/familiar-tale-wanda-sad",
-        element: <FamiliarTaleOptions />,
+        element: <FamiliarTaleParts />,
     },
 
     // {

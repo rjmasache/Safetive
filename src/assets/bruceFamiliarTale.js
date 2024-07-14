@@ -11,6 +11,12 @@ import familiarTaleBruceImage10 from "./familiar-tale-bruce-10.jpg";
 import familiarTaleBruceImage11 from "./familiar-tale-bruce-11.jpg";
 import familiarTaleBruceImage12 from "./familiar-tale-bruce-12.jpg";
 import familiarTaleBruceImage13 from "./familiar-tale-bruce-13.jpg";
+import familiarTaleBruceImage14 from "./familiar-tale-bruce-14.jpg";
+import familiarTaleBruceImage15 from "./familiar-tale-bruce-15.jpg";
+import familiarTaleBruceImage16 from "./familiar-tale-bruce-16.jpg";
+import familiarTaleBruceImage17 from "./familiar-tale-bruce-17.jpg";
+import familiarTaleBruceImage18 from "./familiar-tale-bruce-18.jpg";
+import familiarTaleBruceImage19 from "./familiar-tale-bruce-19.jpeg";
 
 export const startBruceTale = [
     {
@@ -59,8 +65,10 @@ export const calmParentsTale = [
         title: "",
         text: "¿Cómo crees que se sintió Bruce?",
         image: familiarTaleBruceImage2,
-        otherSrc: familiarTaleBruceImage7,
+        otherImage: familiarTaleBruceImage7,
         alt: "FamiliarTaleBruce7",
+        answer1: "Bruce se sintió triste",
+        answer2: "Bruce se sintió tranquilo",
     },
 ];
 
@@ -119,5 +127,108 @@ export const sadBruceTale = [
         text: "Después siguieron a Bruce y él de inmediato empezó a volar. Sus padres se pusieron felices porque su hijo les enseñó lo que aprendió y por el esfuerzo que hizo para lograrlo.",
         image: familiarTaleBruceImage13,
         alt: "FamiliarTaleBruce13",
+    },
+];
+
+export const angryParentsTale = [
+    {
+        id: 1,
+        title: "Mamá y papá enojados",
+        text: "Papá gritando dijo: ¿Qué fue lo que hiciste?",
+        image: familiarTaleBruceImage14,
+        alt: "FamiliarTaleBruce14",
+    },
+    {
+        id: 2,
+        title: "Mamá y papá enojados",
+        text: "Bruce asustado respondió: Accidentalmente rompí un adorno.",
+        image: familiarTaleBruceImage3,
+        alt: "FamiliarTaleBruce3",
+    },
+    {
+        id: 3,
+        title: "Mamá y papá enojados",
+        text: "Mamá enojada respondió: Ese es mi adorno favorito, ¡¿por qué no tienes cuidado al hacer las cosas?!",
+        image: familiarTaleBruceImage15,
+        alt: "FamiliarTaleBruce15",
+    },
+    {
+        id: 4,
+        title: "Mamá y papá enojados",
+        text: "Entonces sus padres lo castigaron y con sus gritos hicieron que Bruce sienta dolor y miedo.",
+        image: familiarTaleBruceImage16,
+        alt: "FamiliarTaleBruce16",
+    },
+    {
+        id: 5,
+        title: "Mamá y papá enojados",
+        text: "Al día siguiente el profesor de Bruce notó que él estaba triste y le preguntó: ¿Qué te sucede Bruce?",
+        image: familiarTaleBruceImage17,
+        alt: "FamiliarTaleBruce17",
+    },
+    {
+        id: 5,
+        title: "Mamá y papá enojados",
+        text: "¿Qué crees que hizo Bruce?",
+        image: familiarTaleBruceImage18,
+        otherImage: familiarTaleBruceImage19,
+        alt: "FamiliarTaleBruce18",
+        answer1: "Bruce se quedó callado",
+        answer2: "Bruce habló con su profesor",
+    },
+];
+
+export const quietBruceTale = [
+    {
+        id: 1,
+        title: "Bruce se quedó callado",
+        text: "Su profesor le dijo: Estoy aquí para ayudarte Bruce, ¿puedes contarme tu problema?",
+        image: familiarTaleBruceImage19,
+        alt: "FamiliarTaleBruce19",
+    },
+    {
+        id: 2,
+        title: "Bruce se quedó callado",
+        text: "Bruce suspiró profundamente y con lágrimas en los ojos le dijo: No me pasa nada.",
+        image: familiarTaleBruceImage7,
+        alt: "FamiliarTaleBruce7",
+    },
+    {
+        id: 3,
+        title: "Bruce se quedó callado",
+        text: "Su profesor le insistió diciendo: Confía en mí, sé que es difícil hablar pero yo puedo ayudarte.",
+        image: familiarTaleBruceImage17,
+        alt: "FamiliarTaleBruce17",
+    },
+    {
+        id: 4,
+        title: "Bruce se quedó callado",
+        text: "Bruce le contó su problema, el profesor habló con sus padres y poco a poco la casa de Bruce se convirtió en un lugar más tranquilo y feliz, donde todos podían cometer errores y aprender de ellos sin miedo.",
+        image: familiarTaleBruceImage10,
+        alt: "FamiliarTaleBruce10",
+    },
+];
+
+export const talkTeacherBruceTale = [
+    {
+        id: 1,
+        title: "Bruce habló con su profesor",
+        text: "Bruce muy triste respondió: Me siento mal porque mamá y papá me gritaron muy feo y no es la primera vez que lo hacen.",
+        image: familiarTaleBruceImage15,
+        alt: "FamiliarTaleBruce15",
+    },
+    {
+        id: 2,
+        title: "Bruce habló con su profesor",
+        text: "El profesor le dijo: Lo siento mucho Bruce, nadie debe hacerte daño, por eso es muy importante que le cuentes a alguien como yo. Te ayudaré a encontrar una solución.",
+        image: familiarTaleBruceImage17,
+        alt: "FamiliarTaleBruce17",
+    },
+    {
+        id: 3,
+        title: "Bruce habló con su profesor",
+        text: "Luego el profesor habló con los padres de Bruce y poco a poco la casa de Bruce se convirtió en un lugar más tranquilo y feliz, donde todos podían cometer errores y aprender de ellos sin miedo.",
+        image: familiarTaleBruceImage10,
+        alt: "FamiliarTaleBruce10",
     },
 ];
