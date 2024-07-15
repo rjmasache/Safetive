@@ -16,7 +16,6 @@ import familiarTaleBruceImage1 from "./familiar-tale-bruce-1.jpg";
 import familiarTaleBruceImage3 from "./familiar-tale-bruce-3.jpeg";
 import familiarTaleBruceImage4 from "./familiar-tale-bruce-4.jpg";
 import familiarTaleBruceImage5 from "./familiar-tale-bruce-5.jpeg";
-import familiarTaleBruceImage6 from "./familiar-tale-bruce-6.jpeg";
 
 export const startWandaTale = [
     {
@@ -64,11 +63,11 @@ export const calmParentsTaleWanda = [
         id: 2,
         title: "",
         text: "¿Cómo crees que se sintió Wanda?",
-        image: familiarTaleWandaImage7,
-        otherImage: familiarTaleWandaImage4,
-        alt: "FamiliarTaleWanda7",
-        answer1: "Wanda se sintió triste",
-        answer2: "Wanda se sintió tranquila",
+        image: familiarTaleWandaImage4,
+        otherImage: familiarTaleWandaImage7,
+        alt: "FamiliarTaleWanda4",
+        answer1: "Wanda se sintió tranquila",
+        answer2: "Wanda se sintió triste",
     },
 ];
 
@@ -170,11 +169,11 @@ export const angryParentsTaleWanda = [
         id: 5,
         title: "Mamá y papá enojados",
         text: "¿Qué crees que hizo Wanda?",
-        image: familiarTaleWandaImage7,
-        otherImage: familiarTaleWandaImage12,
-        alt: "FamiliarTaleWanda7",
-        answer1: "Wanda se quedó callada",
-        answer2: "Wanda habló con su profesor",
+        image: familiarTaleWandaImage12,
+        otherImage: familiarTaleWandaImage7,
+        alt: "FamiliarTaleWanda12",
+        answer1: "Wanda habló con su profesor",
+        answer2: "Wanda se quedó callada",
     },
 ];
 

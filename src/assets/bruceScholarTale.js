@@ -52,12 +52,11 @@ export const startBruceScholarTale = [
         id: 5,
         title: "Superschool",
         text: `¿Qué crees que Carlos respondió`,
-        image: scholarTaleBruce5,
-        otherImage: scholarTaleBruce6,
-        alt: "scholarTaleBruce5",
-        answer1: "No porque tú no puedes volar y vamos a perder",
-        answer2:
-            "Está bien, aunque tú todavía no puedes volar, yo te enseñaré unos trucos",
+        image: scholarTaleBruce6,
+        otherImage: scholarTaleBruce5,
+        alt: "scholarTaleBruce6",
+        answer1: `Está bien, aunque tú todavía no puedes volar, yo te enseñaré unos trucos`,
+        answer2: "No porque tú no puedes volar y vamos a perder",
     },
 ];
 
@@ -73,11 +72,11 @@ export const badFriendScholarTale = [
         id: 2,
         title: "Superschool",
         text: `¿Cómo crees que reaccionó Bruce?`,
-        image: scholarTaleBruce13,
-        otherImage: scholarTaleBruce7,
-        alt: "scholarTaleBruce13",
-        answer1: "Le pegó a su compañero",
-        answer2: "Fue a hablar con su profesor",
+        image: scholarTaleBruce17,
+        otherImage: scholarTaleBruce13,
+        alt: "scholarTaleBruce17",
+        answer1: "Fue a hablar con su profesor",
+        answer2: "Le pegó a su compañero",
     },
 ];
 

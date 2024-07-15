@@ -52,6 +52,7 @@ import {
     wandaRejectScholarTale,
     wandaTalkTeacherScholarTale,
 } from "./assets/wandaScholarTale.js";
+import EndPageTale from "./components/EndPageTale.jsx";
 
 const router = createBrowserRouter([
     {
@@ -100,8 +101,8 @@ const router = createBrowserRouter([
             <FamiliarTaleParts
                 path={`/familiar-tale-bruce-angry-parents`}
                 tale={angryParentsTale}
-                firstLink={`/familiar-tale-bruce-quiet`}
-                secondLink={`/familiar-tale-bruce-talk-teacher`}
+                firstLink={`/familiar-tale-bruce-talk-teacher`}
+                secondLink={`/familiar-tale-bruce-quiet`}
             />
         ),
     },
@@ -159,8 +160,8 @@ const router = createBrowserRouter([
             <FamiliarTaleParts
                 path={`/familiar-tale-wanda-calm-parents`}
                 tale={calmParentsTaleWanda}
-                firstLink={`/familiar-tale-wanda-sad`}
-                secondLink={`/familiar-tale-wanda-calm`}
+                firstLink={`/familiar-tale-wanda-calm`}
+                secondLink={`/familiar-tale-wanda-sad`}
             />
         ),
     },
@@ -170,8 +171,8 @@ const router = createBrowserRouter([
             <FamiliarTaleParts
                 path={`/familiar-tale-wanda-angry-parents`}
                 tale={angryParentsTaleWanda}
-                firstLink={`/familiar-tale-wanda-quiet`}
-                secondLink={`/familiar-tale-wanda-talk-teacher`}
+                firstLink={`/familiar-tale-wanda-talk-teacher`}
+                secondLink={`/familiar-tale-wanda-quiet`}
             />
         ),
     },
@@ -223,8 +224,8 @@ const router = createBrowserRouter([
             <ScholarTaleParts
                 path="/scholar-tale-bruce"
                 tale={startBruceScholarTale}
-                firstLink={`/scholar-tale-bad-friend`}
-                secondLink={`/scholar-tale-good-friend`}
+                firstLink={`/scholar-tale-good-friend`}
+                secondLink={`/scholar-tale-bad-friend`}
             />
         ),
     },
@@ -234,8 +235,8 @@ const router = createBrowserRouter([
             <ScholarTaleParts
                 path="/scholar-tale-bad-friend"
                 tale={badFriendScholarTale}
-                firstLink={`/scholar-tale-bruce-hit`}
-                secondLink={`/scholar-tale-bruce-talk-teacher`}
+                firstLink={`/scholar-tale-bruce-talk-teacher`}
+                secondLink={`/scholar-tale-bruce-hit`}
             />
         ),
     },
@@ -298,8 +299,8 @@ const router = createBrowserRouter([
             <ScholarTaleParts
                 path="/scholar-tale-wanda"
                 tale={startWandaScholarTale}
-                firstLink={`/scholar-tale-bad-friend-wanda`}
-                secondLink={`/scholar-tale-good-friend-wanda`}
+                firstLink={`/scholar-tale-good-friend-wanda`}
+                secondLink={`/scholar-tale-bad-friend-wanda`}
             />
         ),
     },
@@ -309,8 +310,8 @@ const router = createBrowserRouter([
             <ScholarTaleParts
                 path="/scholar-tale-bad-friend-wanda"
                 tale={badFriendWandaScholarTale}
-                firstLink={`/scholar-tale-wanda-hit`}
-                secondLink={`/scholar-tale-wanda-talk-teacher`}
+                firstLink={`/scholar-tale-wanda-talk-teacher`}
+                secondLink={`/scholar-tale-wanda-hit`}
             />
         ),
     },

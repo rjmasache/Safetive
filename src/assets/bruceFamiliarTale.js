@@ -66,9 +66,9 @@ export const calmParentsTale = [
         text: "¿Cómo crees que se sintió Bruce?",
         image: familiarTaleBruceImage2,
         otherImage: familiarTaleBruceImage7,
-        alt: "FamiliarTaleBruce7",
-        answer1: "Bruce se sintió triste",
-        answer2: "Bruce se sintió tranquilo",
+        alt: "FamiliarTaleBruce2",
+        answer1: "Bruce se sintió tranquilo",
+        answer2: "Bruce se sintió triste",
     },
 ];
 
@@ -170,11 +170,11 @@ export const angryParentsTale = [
         id: 5,
         title: "Mamá y papá enojados",
         text: "¿Qué crees que hizo Bruce?",
-        image: familiarTaleBruceImage18,
-        otherImage: familiarTaleBruceImage19,
-        alt: "FamiliarTaleBruce18",
-        answer1: "Bruce se quedó callado",
-        answer2: "Bruce habló con su profesor",
+        image: familiarTaleBruceImage19,
+        otherImage: familiarTaleBruceImage18,
+        alt: "FamiliarTaleBruce19",
+        answer1: "Bruce habló con su profesor",
+        answer2: "Bruce se quedó callado",
     },
 ];
 

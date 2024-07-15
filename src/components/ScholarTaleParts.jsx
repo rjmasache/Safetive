@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "./Navigation.jsx";
 import TaleButton from "./TaleButton.jsx";
 import Footer from "./Footer.jsx";
+import EndPageTale from "./EndPageTale.jsx";
 
 export default function ScholarTaleParts({
     path,
@@ -11,6 +12,9 @@ export default function ScholarTaleParts({
     secondLink,
 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [good, setGood] = useState(0);
+    const [bad, setBad] = useState(0);
+    const [end, setEnd] = useState(false);
 
     function handlePreviousClick(e) {
         e.stopPropagation();
@@ -63,7 +67,10 @@ export default function ScholarTaleParts({
                                         <TaleButton
                                             text={currentContent.answer1}
                                             classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-sm sm:text-xl"
-                                            onClick={() => setCurrentIndex(0)}
+                                            onClick={() => {
+                                                setCurrentIndex(0);
+                                                setGood(good + 1);
+                                            }}
                                         />
                                     </Link>
                                 </div>
@@ -79,7 +86,10 @@ export default function ScholarTaleParts({
                                         <TaleButton
                                             text={currentContent.answer2}
                                             classNameButton="rounded-2xl px-2 py-2 bg-safetive font-comic text-link text-sm sm:text-xl"
-                                            onClick={() => setCurrentIndex(0)}
+                                            onClick={() => {
+                                                setCurrentIndex(0);
+                                                setBad(bad + 1);
+                                            }}
                                         />
                                     </Link>
                                 </div>
@@ -88,6 +98,18 @@ export default function ScholarTaleParts({
                     </section>
                 </div>
                 <Footer />
+            </>
+        );
+    }
+
+    if (end) {
+        return (
+            <>
+                <Navigation />
+                <div className="flex min-h-screen w-full flex-col bg-character">
+                    <EndPageTale good={good} bad={bad} />
+                    <Footer />
+                </div>
             </>
         );
     }
@@ -117,7 +139,11 @@ export default function ScholarTaleParts({
                                 <Link to={`/familiar-characters`}>
                                     <TaleButton
                                         text="Anterior"
-                                        onClick={() => setCurrentIndex(0)}
+                                        onClick={() => {
+                                            setCurrentIndex(0);
+                                            setGoodAnswers(0);
+                                            setBadAnswers(0);
+                                        }}
                                         classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-sm sm:text-lg text-link sm:px-14"
                                     />
                                 </Link>
@@ -135,13 +161,14 @@ export default function ScholarTaleParts({
                         </div>
                         <div className="absolute bottom-0 right-0 m-3 sm:top-0 sm:m-10">
                             {currentIndex === tale.length - 1 ? (
-                                <Link to={`/scholar-characters`}>
-                                    <TaleButton
-                                        text="Fin"
-                                        onClick={() => setCurrentIndex(0)}
-                                        classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-link sm:px-14 text-sm sm:text-lg"
-                                    />
-                                </Link>
+                                <TaleButton
+                                    text="Fin"
+                                    onClick={() => {
+                                        setCurrentIndex(0);
+                                        setEnd(!end);
+                                    }}
+                                    classNameButton="rounded-2xl bg-safetive px-2 py-3 font-comic text-link sm:px-14 text-sm sm:text-lg"
+                                />
                             ) : (
                                 <TaleButton
                                     text="Siguiente"

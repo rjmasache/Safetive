@@ -49,12 +49,11 @@ export const startWandaScholarTale = [
         id: 5,
         title: "Superschool",
         text: `¿Qué crees que Carolina respondió`,
-        image: scholarTaleWanda2,
-        otherImage: scholarTaleWanda3,
-        alt: "scholarTaleBruce5",
-        answer1: "No porque tú no puedes volar y vamos a perder",
-        answer2:
-            "Está bien, aunque tú todavía no puedes volar, yo te enseñaré unos trucos",
+        image: scholarTaleWanda3,
+        otherImage: scholarTaleWanda2,
+        alt: "scholarTaleBruce3",
+        answer1: `Está bien, aunque tú todavía no puedes volar, yo te enseñaré unos trucos`,
+        answer2: "No porque tú no puedes volar y vamos a perder",
     },
 ];
 
@@ -70,11 +69,11 @@ export const badFriendWandaScholarTale = [
         id: 2,
         title: "Superschool",
         text: `¿Cómo crees que reaccionó Wanda?`,
-        image: scholarTaleWanda4,
-        otherImage: scholarTaleWanda5,
-        alt: "scholarTaleWanda4",
-        answer1: "Le pegó a su compañera",
-        answer2: "Fue a hablar con su profesor",
+        image: scholarTaleWanda5,
+        otherImage: scholarTaleWanda4,
+        alt: "scholarTaleWanda5",
+        answer1: "Fue a hablar con su profesor",
+        answer2: "Le pegó a su compañera",
     },
 ];
 
@@ -175,7 +174,7 @@ export const goodFriendWandaScholarTale = [
         text: `Carolina le ofrece ayuda a Wanda`,
         image: scholarTaleWanda1,
         otherImage: scholarTaleWanda2,
-        alt: "scholarTaleBruce18",
+        alt: "scholarTaleBruce1",
         answer1: "Wanda acepta la ayuda emocionado",
         answer2: "Wanda con miedo rechaza la ayuda",
     },
