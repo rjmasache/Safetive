@@ -8,6 +8,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
 import About from "./routes/About.jsx";
 import Tales from "./routes/Tales.jsx";
+
+// Familiar Tale
 import FamiliarCharacters from "./routes/FamiliarCharacters.jsx";
 import FamiliarTaleParts from "./components/FamiliarTaleParts.jsx";
 import {
@@ -19,8 +21,37 @@ import {
     talkTeacherBruceTale,
     quietBruceTale,
 } from "./assets/bruceFamiliarTale.js";
-// import ScholarTale from "./routes/ScholarTale.jsx";
-// import ScholarCharacters from "./routes/ScholarCharacters.jsx";
+import {
+    startWandaTale,
+    calmParentsTaleWanda,
+    calmWandaTale,
+    sadWandaTale,
+    angryParentsTaleWanda,
+    quietWandaTale,
+    talkTeacherWandaTale,
+} from "./assets/wandaFamiliarTale.js";
+
+// Scholar tale
+import ScholarCharacters from "./routes/ScholarCharacters.jsx";
+import ScholarTaleParts from "./components/ScholarTaleParts.jsx";
+import {
+    badFriendScholarTale,
+    bruceAcceptScholarTale,
+    bruceHitScholarTale,
+    bruceRejectScholarTale,
+    bruceTalkTeacherScholarTale,
+    goodFriendScholarTale,
+    startBruceScholarTale,
+} from "./assets/bruceScholarTale.js";
+import {
+    badFriendWandaScholarTale,
+    goodFriendWandaScholarTale,
+    startWandaScholarTale,
+    wandaAcceptScholarTale,
+    wandaHitScholarTale,
+    wandaRejectScholarTale,
+    wandaTalkTeacherScholarTale,
+} from "./assets/wandaScholarTale.js";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +71,7 @@ const router = createBrowserRouter([
         path: "/familiar-characters",
         element: <FamiliarCharacters />,
     },
+    // Routes for Bruce familiar tale
     {
         path: "/familiar-tale-bruce",
         element: (
@@ -79,8 +111,6 @@ const router = createBrowserRouter([
             <FamiliarTaleParts
                 path={`/familiar-tale-bruce-calm`}
                 tale={calmBruceTale}
-                firstLink={`/familiar-tale-bruce-calm`}
-                secondLink={`/familiar-tale-bruce-sad`}
             />
         ),
     },
@@ -90,8 +120,6 @@ const router = createBrowserRouter([
             <FamiliarTaleParts
                 path={`/familiar-tale-bruce-sad`}
                 tale={sadBruceTale}
-                firstLink={`/familiar-tale-bruce-calm`}
-                secondLink={`/familiar-tale-bruce-sad`}
             />
         ),
     },
@@ -99,10 +127,8 @@ const router = createBrowserRouter([
         path: "/familiar-tale-bruce-quiet",
         element: (
             <FamiliarTaleParts
-                path={`/familiar-tale-bruce-calm`}
+                path={`/familiar-tale-bruce-quiet`}
                 tale={quietBruceTale}
-                firstLink={`/familiar-tale-bruce-calm`}
-                secondLink={`/familiar-tale-bruce-sad`}
             />
         ),
     },
@@ -110,42 +136,231 @@ const router = createBrowserRouter([
         path: "/familiar-tale-bruce-talk-teacher",
         element: (
             <FamiliarTaleParts
-                path={`/familiar-tale-bruce-calm`}
+                path={`/familiar-tale-bruce-talk-teacher`}
                 tale={talkTeacherBruceTale}
-                firstLink={`/familiar-tale-bruce-calm`}
-                secondLink={`/familiar-tale-bruce-sad`}
+            />
+        ),
+    },
+    // Routes for Wanda familiar tale
+    {
+        path: "/familiar-tale-wanda",
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda`}
+                tale={startWandaTale}
+                firstLink={`/familiar-tale-wanda-calm-parents`}
+                secondLink={`/familiar-tale-wanda-angry-parents`}
             />
         ),
     },
     {
-        path: "/familiar-tale-wanda",
-        element: <FamiliarTaleParts />,
-    },
-    {
         path: "/familiar-tale-wanda-calm-parents",
-        element: <FamiliarTaleParts />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda-calm-parents`}
+                tale={calmParentsTaleWanda}
+                firstLink={`/familiar-tale-wanda-sad`}
+                secondLink={`/familiar-tale-wanda-calm`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-wanda-angry-parents",
-        element: <FamiliarTaleParts />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda-angry-parents`}
+                tale={angryParentsTaleWanda}
+                firstLink={`/familiar-tale-wanda-quiet`}
+                secondLink={`/familiar-tale-wanda-talk-teacher`}
+            />
+        ),
     },
     {
         path: "/familiar-tale-wanda-calm",
-        element: <FamiliarTaleParts />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda-calm`}
+                tale={calmWandaTale}
+            />
+        ),
     },
     {
         path: "/familiar-tale-wanda-sad",
-        element: <FamiliarTaleParts />,
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda-sad`}
+                tale={sadWandaTale}
+            />
+        ),
+    },
+    {
+        path: "/familiar-tale-wanda-quiet",
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda-quiet`}
+                tale={quietWandaTale}
+            />
+        ),
+    },
+    {
+        path: "/familiar-tale-wanda-talk-teacher",
+        element: (
+            <FamiliarTaleParts
+                path={`/familiar-tale-wanda-talk-teacher`}
+                tale={talkTeacherWandaTale}
+            />
+        ),
     },
 
-    // {
-    //     path: "/scholar-tale",
-    //     element: <ScholarTale />,
-    // },
-    // {
-    //     path: "/scholar-characters",
-    //     element: <ScholarCharacters />,
-    // },
+    // Bruce Scholar tale
+    {
+        path: "/scholar-characters",
+        element: <ScholarCharacters />,
+    },
+    {
+        path: "/scholar-tale-bruce",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bruce"
+                tale={startBruceScholarTale}
+                firstLink={`/scholar-tale-bad-friend`}
+                secondLink={`/scholar-tale-good-friend`}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-bad-friend",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bad-friend"
+                tale={badFriendScholarTale}
+                firstLink={`/scholar-tale-bruce-hit`}
+                secondLink={`/scholar-tale-bruce-talk-teacher`}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-bruce-hit",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bruce-hit"
+                tale={bruceHitScholarTale}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-bruce-talk-teacher",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bruce-talk-teacher"
+                tale={bruceTalkTeacherScholarTale}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-good-friend",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-good-friend"
+                tale={goodFriendScholarTale}
+                firstLink={`/scholar-tale-bruce-accept`}
+                secondLink={`/scholar-tale-bruce-reject`}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-bruce-reject",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bruce-reject"
+                tale={bruceRejectScholarTale}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-bruce-accept",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bruce-accept"
+                tale={bruceAcceptScholarTale}
+            />
+        ),
+    },
+
+    // Wanda Scholar tale
+    {
+        path: "/scholar-characters",
+        element: <ScholarCharacters />,
+    },
+    {
+        path: "/scholar-tale-wanda",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-wanda"
+                tale={startWandaScholarTale}
+                firstLink={`/scholar-tale-bad-friend-wanda`}
+                secondLink={`/scholar-tale-good-friend-wanda`}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-bad-friend-wanda",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-bad-friend-wanda"
+                tale={badFriendWandaScholarTale}
+                firstLink={`/scholar-tale-wanda-hit`}
+                secondLink={`/scholar-tale-wanda-talk-teacher`}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-wanda-hit",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-wanda-hit"
+                tale={wandaHitScholarTale}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-wanda-talk-teacher",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-wanda-talk-teacher"
+                tale={wandaTalkTeacherScholarTale}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-good-friend-wanda",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-good-friend-wanda"
+                tale={goodFriendWandaScholarTale}
+                firstLink={`/scholar-tale-wanda-accept`}
+                secondLink={`/scholar-tale-wanda-reject`}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-wanda-reject",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-wanda-reject"
+                tale={wandaRejectScholarTale}
+            />
+        ),
+    },
+    {
+        path: "/scholar-tale-wanda-accept",
+        element: (
+            <ScholarTaleParts
+                path="/scholar-tale-wanda-accept"
+                tale={wandaAcceptScholarTale}
+            />
+        ),
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

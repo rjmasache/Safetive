@@ -112,7 +112,8 @@ export default function FamiliarTaleParts({
                             className="w-full"
                         />
                         <div className="absolute bottom-0 left-0 m-3 sm:top-0 sm:m-10">
-                            {path === "/familiar-tale-bruce" ? (
+                            {path === "/familiar-tale-bruce" ||
+                            path === "/familiar-tale-wanda" ? (
                                 <Link to={`/familiar-characters`}>
                                     <TaleButton
                                         text="Anterior"
